@@ -1,0 +1,231 @@
+.preference {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+    z-index: -1;
+  }
+}
+
+.preference__list {
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    max-width: 1220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+.preference__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: normal;
+  margin-top: 27px;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 45px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 73px;
+  }
+}
+
+.preference__description {
+  color: $main-color-text;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  padding-left: 80px;
+  margin: 0;
+  padding-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 151px;
+    padding-left: 0;
+    padding-bottom: 57px;
+  }
+}
+
+.preference__item {
+  position: relative;
+  min-height: 60px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 139px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.preference__item::before {
+  content: "";
+  background-color: #68b738;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+
+  @media (min-width: $tablet-width) {
+    top: 40px;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.preference__item-one::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "1";
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    top: 0;
+    left: 118px;
+    z-index: -1;
+  }
+}
+
+.preference__item-two::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "2";
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    top: 0;
+    left: 112px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 111px;
+  }
+}
+
+.preference__item-three::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "3";
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    top: 0;
+    left: 113px;
+    z-index: -1;
+  }
+}
+
+.preference__item-four::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "4";
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    top: 0;
+    left: 113px;
+    z-index: -1;
+  }
+}
+
+.preference__description::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50px 50px;
+}
+
+.preference__description-leaf::before {
+  background-image: url("../img/advantage-leaf@1x.png");
+  width: 30px;
+  height: 32px;
+  left: 15px;
+  top: 14px;
+
+  @media (min-resolution: 144dpi) {
+    background-image: url("../img/advantage-leaf@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 24px;
+    top: 65px;
+  }
+}
+
+.preference__description-powder::before {
+  background-image: url("../img/advantage-powder@1x.png");
+  color: #444444;
+  width: 29px;
+  height: 31px;
+  left: 15px;
+  top: 13px;
+
+  @media (min-resolution: 144dpi) {
+    background-image: url("../img/advantage-powder@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 25px;
+    top: 64px;
+  }
+}
+
+.preference__description-dining::before {
+  background-image: url("../img/advantage-dining@1x.png");
+  width: 23px;
+  height: 30px;
+  left: 17px;
+  top: 15px;
+
+  @media (min-resolution: 144dpi) {
+    background-image: url("../img/advantage-dining@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 28px;
+    top: 65px;
+  }
+}
+
+.preference__description-clock::before {
+  background-image: url("../img/advantage-clock@1x.png");
+  width: 32px;
+  height: 33px;
+  left: 14px;
+  top: 13px;
+
+  @media (min-resolution: 144dpi) {
+    background-image: url("../img/advantage-clock@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 24px;
+    top: 63px;
+  }
+}

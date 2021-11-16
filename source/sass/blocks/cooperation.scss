@@ -1,0 +1,57 @@
+.cooperation {
+  position: relative;
+  background-color: #ffffff;
+}
+
+
+.cooperation__title {
+  margin: 0;
+  width: 140px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #111111;
+
+  @media (min-width: $tablet-width) {
+    width: 171px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 163px;
+    margin-left: 35px;
+  }
+}
+
+.cooperation__description {
+  margin: 0;
+  width: 140px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    width: 159px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+    margin-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+    margin-right: 42px;
+  }
+}
+
+.cooperation__description span {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 23px;
+  }
+}

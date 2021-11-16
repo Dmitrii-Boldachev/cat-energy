@@ -1,0 +1,14 @@
+.programs-wrapper {
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    max-width: 1220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}

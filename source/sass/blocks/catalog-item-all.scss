@@ -1,0 +1,140 @@
+.catalog-item-all {
+  position: relative;
+  padding-top: 78px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 81px;
+    border: 2px solid #f2f2f2;
+    background-color: #ffffff;
+  }
+}
+
+.catalog-item-all::before {
+  content: "";
+  background: url("../img/icon-plus-mobile.svg");
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 25px;
+  left: 125px;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/icon-plus.svg");
+    width: 60px;
+    height: 60px;
+    top: 52px;
+    left: 132px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 51px;
+    left: 92px;
+  }
+}
+
+.catalog-item-all small {
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: 30px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    width: 167px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #444444;
+    padding-top: 20px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.catalog-item-all__title {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    width: 135px;
+    padding-top: 80px;
+    font-size: 20px;
+    line-height: 22px;
+    color: #111111;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+  }
+}
+
+.catalog-item__image-small {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: -46px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -51px;
+    z-index: 1;
+  }
+}
+
+.catalog-item__image-small--fish,
+.catalog-item__image-small--buckwheat {
+  top: 10px;
+
+  @media (min-width: $tablet-width) {
+    top: -46px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -55px;
+    z-index: 1;
+  }
+}
+
+.catalog-item__image-small--rice {
+  top: 8px;
+
+  @media (min-width: $tablet-width) {
+    top: -47px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -54px;
+    z-index: 1;
+  }
+}
+
+.catalog-item__image-big {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: -78px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -81px;
+  }
+}

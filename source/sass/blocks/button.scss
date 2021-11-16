@@ -1,0 +1,123 @@
+.button {
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-top: 2px;
+  background-color: $button-color;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 22;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button__promo {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: inline-block;
+    font-size: 20px;
+    padding: 18px 27px 18px 26px;
+    top: 273px;
+    margin-left: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 455px;
+    margin-left: 80px;
+  }
+}
+
+.button__catalog-item {
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    padding: 10px 94px 11px 93px;
+    margin-left: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 53px 11px 54px;
+  }
+}
+
+.button__catalog-item-all {
+  margin-top: 21px;
+  background-color: #f2f2f2;
+  color: #444444;
+  font-size: 16px;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 78px 12px 78px;
+    margin-left: 38px;
+    margin-top: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 85px;
+    margin-left: 36px;
+    padding: 11px 39px 11px 39px;
+  }
+}
+
+.button__additional-products {
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 631px;
+    padding: 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 244px;
+    font-size: 16px;
+    padding: 11px 33px;
+    margin: auto;
+  }
+}
+
+.button__form-order {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 21px;
+  padding-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: normal;
+    width: 282px;
+    margin-right: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
+}
